@@ -15,5 +15,6 @@ static class RouteRegistrationExtensions
 
         apiGroup.MapGet("customer/list", async ([AsParameters]CustomerListQuery query, IMediator mediator) => await mediator.Send(query)).WithName("GetCustomerList").WithOpenApi();
 
+        /*giusto*/
     }
 }
